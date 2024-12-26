@@ -20,3 +20,6 @@ app.include_router(products.router, prefix="/products", tags=["Products"])
 
 # Inclure le routeur d'authentification
 app.include_router(auth_router, prefix="/auth", tags=["auth"])
+
+
+#uvicorn app.main:app --reload
